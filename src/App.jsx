@@ -24,7 +24,7 @@ function App() {
     for (let i = start; i < end && i < filtered.length; i++) {
       const restaurant = filtered[i];
       cards.push(
-        <RestaurantCard key={i} name={restaurant.name} location={restaurant.location} cuisine={restaurant.cuisine_type} />
+        <RestaurantCard key={i} name={restaurant.name} location={restaurant.location} cuisine={restaurant.cuisine_type} rating={restaurant.rating} />
       );
     }
 
